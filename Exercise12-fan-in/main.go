@@ -5,6 +5,7 @@ import "context"
 func main() {
 }
 
+// TO USE: go get -u go.atomizer.io/stream@latest
 // COPIED FROM:https://github.com/devnw/stream/blob/8186e9bc20761e99c3906122c054ea0ce09d7a31/stream.go#L87
 // FanIn accepts incoming data channels and forwards returns a single channel
 // that receives all the data from the supplied channels.
@@ -39,6 +40,7 @@ func FanIn[T any](ctx context.Context, in ...<-chan T) <-chan T {
 	return out
 }
 
+// TO USE: go get -u go.atomizer.io/stream@latest
 // COPIED FROM: https://github.com/devnw/stream/blob/8186e9bc20761e99c3906122c054ea0ce09d7a31/stream.go#L19
 // Pipe accepts an incoming data channel and pipes it to the supplied
 // outgoing data channel.
@@ -54,6 +56,7 @@ func Pipe[T any](ctx context.Context, in <-chan T, out chan<- T) {
 	FanOut(ctx, in, out)
 }
 
+// TO USE: go get -u go.atomizer.io/stream@latest
 // COPIED FROM: https://github.com/devnw/stream/blob/8186e9bc20761e99c3906122c054ea0ce09d7a31/stream.go#L117
 // FanOut accepts an incoming data channel and copies the data to each of the
 // supplied outgoing data channels.

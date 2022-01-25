@@ -5,9 +5,12 @@ import "context"
 func main() {
 }
 
+// TO USE: go get -u go.atomizer.io/stream@latest
 // COPIED FROM: https://github.com/devnw/stream/blob/8186e9bc20761e99c3906122c054ea0ce09d7a31/stream.go#L32
 type InterceptFunc[T, U any] func(context.Context, T) (U, bool)
 
+// TO USE: go get -u go.atomizer.io/stream@latest
+// COPIED FROM: https://github.com/devnw/stream/blob/8186e9bc20761e99c3906122c054ea0ce09d7a31/stream.go#L32
 // Intercept accepts an incoming data channel and a function literal that
 // accepts the incoming data and returns data of the same type and a boolean
 // indicating whether the data should be forwarded to the output channel.

@@ -18,6 +18,8 @@ func main() {
 	}
 }
 
+// TO USE: go get -u go.structs.dev/gen@latest
+// COPIED FROM: https://github.com/structsdev/gen/blob/c58442d64fa19e214263757cf4d200de2eb2911c/slice.go#L30
 type Slice[T any] []T
 
 func (s Slice[T]) Chan() <-chan T {

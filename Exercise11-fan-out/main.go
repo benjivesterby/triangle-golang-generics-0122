@@ -5,6 +5,7 @@ import "context"
 func main() {
 }
 
+// TO USE: go get -u go.atomizer.io/stream@latest
 // COPIED FROM: https://github.com/devnw/stream/blob/8186e9bc20761e99c3906122c054ea0ce09d7a31/stream.go#L117
 // FanOut accepts an incoming data channel and copies the data to each of the
 // supplied outgoing data channels.
